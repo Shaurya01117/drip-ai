@@ -87,41 +87,82 @@ export default function UploadPage() {
   </ul>
 </div>
 
-            {/* Affiliate Product Card */}
-            <div className="mt-8 border rounded-xl p-4 shadow-sm">
-              <div className="flex gap-4 items-center">
-                <img
-                  src="https://placehold.co/120x160?text=Product"
-                  alt="Product"
-                  className="w-24 rounded-lg"
-                />
+           {/* Multi Product Recommendations */}
+<div className="mt-8 space-y-4">
+  <h3 className="font-semibold text-lg">
+    🛍️ Best places to buy this look
+  </h3>
 
-                <div className="flex-1">
-                  <h3 className="font-semibold text-lg">
-                    Black Oversized T-Shirt
-                  </h3>
-                  <p className="text-sm text-gray-600">
-                    ₹699 • Street style fit
-                  </p>
+  {/* Amazon */}
+  <div className="border rounded-xl p-4 flex items-center gap-4">
+    <img
+      src="https://placehold.co/80x120?text=Amazon"
+      alt="Amazon"
+      className="rounded-lg"
+    />
 
-                  <a
-                    href="https://www.amazon.in/?tag=YOURTAG-21"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-3 bg-black text-white px-4 py-2 rounded-lg hover:opacity-80 transition"
-                  >
-                    Buy on Amazon
-                  </a>
-                </div>
-              </div>
+    <div className="flex-1">
+      <p className="font-medium">Black Oversized T-Shirt</p>
+      <p className="text-sm text-gray-600">₹699 • Amazon</p>
+    </div>
 
-              <p className="mt-3 text-xs text-gray-500">
-                Affiliate link • We may earn a commission
-              </p>
-            </div>
-          </>
-        )}
-      </div>
-    </main>
-  );
-}
+    <a
+      href="https://www.amazon.in/?tag=YOURTAG-21"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black text-white px-4 py-2 rounded-lg text-sm hover:opacity-80"
+    >
+      Buy
+    </a>
+  </div>
+
+  {/* Flipkart */}
+  <div className="border rounded-xl p-4 flex items-center gap-4">
+    <img
+      src="https://placehold.co/80x120?text=Flipkart"
+      alt="Flipkart"
+      className="rounded-lg"
+    />
+
+    <div className="flex-1">
+      <p className="font-medium">Black Street Fit Tee</p>
+      <p className="text-sm text-gray-600">₹679 • Flipkart</p>
+    </div>
+
+    <a
+      href="https://www.flipkart.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black text-white px-4 py-2 rounded-lg text-sm hover:opacity-80"
+    >
+      Buy
+    </a>
+  </div>
+
+  {/* Myntra */}
+  <div className="border rounded-xl p-4 flex items-center gap-4">
+    <img
+      src="https://placehold.co/80x120?text=Myntra"
+      alt="Myntra"
+      className="rounded-lg"
+    />
+
+    <div className="flex-1">
+      <p className="font-medium">Oversized Cotton T-Shirt</p>
+      <p className="text-sm text-gray-600">₹749 • Myntra</p>
+    </div>
+
+    <a
+      href="https://www.myntra.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-black text-white px-4 py-2 rounded-lg text-sm hover:opacity-80"
+    >
+      Buy
+    </a>
+  </div>
+
+  <p className="text-xs text-gray-500 text-center">
+    Affiliate links • Prices may vary
+  </p>
+</div>
