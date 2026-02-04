@@ -91,6 +91,34 @@ export default function UploadPage() {
                 🛍️ Buy this look from
               </h3>
 
+{/* Share Section */}
+<div className="mt-6 text-center">
+  <button
+    onClick={() => {
+      const shareUrl = window.location.href;
+
+      if (navigator.share) {
+        navigator.share({
+          title: "My AI Outfit Look 👕🔥",
+          text: "Check out how I look using AI outfit try-on!",
+          url: shareUrl,
+        });
+      } else {
+        navigator.clipboard.writeText(shareUrl);
+        alert("Link copied! Share it anywhere 🚀");
+      }
+    }}
+    className="w-full px-6 py-3 rounded-xl text-lg bg-black text-white hover:opacity-90 transition"
+  >
+    🔗 Share your AI look
+  </button>
+
+  <p className="mt-2 text-xs text-gray-500">
+    Share with friends • Show off your drip 😮‍💨
+  </p>
+</div>
+
+              
               {/* Amazon */}
               <div className="border rounded-xl p-4 flex items-center justify-between">
                 <div>
