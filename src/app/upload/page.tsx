@@ -73,6 +73,19 @@ export default function UploadPage() {
               alt="AI Preview"
               className="mt-8 mx-auto w-64 rounded-xl shadow-2xl border"
             />
+            
+{/* Smart AI Picks */}
+<div className="mt-6 bg-gray-100 rounded-xl p-4">
+  <h3 className="font-semibold text-lg mb-2">
+    🔥 AI Picks for You
+  </h3>
+
+  <ul className="text-sm text-gray-700 space-y-1">
+    <li>✔️ Oversized fits suit your body frame</li>
+    <li>✔️ Dark colors enhance your look</li>
+    <li>✔️ Street style works better than slim-fit</li>
+  </ul>
+</div>
 
             {/* Affiliate Product Card */}
             <div className="mt-8 border rounded-xl p-4 shadow-sm">
